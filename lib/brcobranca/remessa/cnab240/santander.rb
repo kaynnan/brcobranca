@@ -27,10 +27,6 @@ module Brcobranca
           agencia.modulo11(mapeamento: { 10 => 'X', 11 => 'X' }).to_s
         end
 
-        def digito_conta
-          conta_corrente.modulo11(mapeamento: { 10 => 'X', 11 => 'X' }).to_s
-        end
-
         def complemento_header
           ''.rjust(29, ' ')
         end
